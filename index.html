@@ -7,128 +7,209 @@
 <title>SAW's Actions</title>
 
 <style>
-    * {
-        box-sizing: border-box;
-    }
+* {
+    box-sizing: border-box;
+}
 
-    body {
-        margin: 0;
-        font-family: Arial, "Myanmar Text", sans-serif;
-        background: #f2f3f5;
-        color: #222;
-    }
+body {
+    margin: 0;
+    font-family: Arial, "Myanmar Text", sans-serif;
+    background: #f4f5f7;
+    color: #222;
+}
 
-    .header {
-        background: #111;
-        color: white;
-        text-align: center;
-        padding: 35px 20px;
-    }
+header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 42px 20px;
+}
 
-    .header h1 {
-        margin: 0;
-        font-size: 32px;
-    }
+header h1 {
+    margin: 0;
+    font-size: 34px;
+}
 
-    .header p {
-        margin-top: 10px;
-        color: #ccc;
-        font-size: 15px;
-    }
+header p {
+    margin: 10px 0 0;
+    color: #ccc;
+}
 
-    .container {
-        max-width: 650px;
-        margin: auto;
-        padding: 20px;
-    }
+nav {
+    background: white;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 8px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
 
-    .welcome {
-        background: white;
-        padding: 25px;
-        border-radius: 18px;
-        text-align: center;
-        margin-bottom: 18px;
-        box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-    }
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 10px;
+    font-size: 14px;
+}
 
-    .welcome h2 {
-        margin-top: 0;
-    }
+.container {
+    max-width: 680px;
+    margin: auto;
+    padding: 20px;
+}
 
-    .card {
-        display: block;
-        background: white;
-        color: #222;
-        text-decoration: none;
-        padding: 20px;
-        margin: 12px 0;
-        border-radius: 15px;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.07);
-    }
+.card {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 14px rgba(0,0,0,.07);
+}
 
-    .card strong {
-        font-size: 19px;
-    }
+.profile {
+    text-align: center;
+}
 
-    .card span {
-        display: block;
-        margin-top: 6px;
-        color: #666;
-        font-size: 14px;
-    }
+.profile-icon {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    border-radius: 50%;
+    background: #111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
 
-    .footer {
-        text-align: center;
-        padding: 30px 15px;
-        color: #777;
-        font-size: 13px;
-    }
+h2 {
+    margin-top: 10px;
+}
+
+.section-title {
+    font-size: 23px;
+    margin-top: 0;
+}
+
+.post {
+    border-left: 4px solid #111;
+    padding-left: 15px;
+    margin-top: 15px;
+}
+
+.social a {
+    display: block;
+    text-decoration: none;
+    color: #222;
+    padding: 13px;
+    margin-top: 9px;
+    background: #f1f2f4;
+    border-radius: 12px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    color: #777;
+    font-size: 13px;
+}
 </style>
 </head>
 
 <body>
 
-<header class="header">
+<header>
     <h1>SAW's Actions</h1>
     <p>My little place on the Internet</p>
 </header>
 
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#thoughts">Thoughts</a>
+    <a href="#photos">Photos</a>
+    <a href="#social">Social</a>
+</nav>
+
 <main class="container">
 
-    <section class="welcome">
-        <h2>မင်္ဂလာပါ 👋</h2>
+<section class="card profile" id="home">
+    <div class="profile-icon">SAW</div>
+
+    <h2>မင်္ဂလာပါ 👋</h2>
+
+    <p>
+        SAW's Actions မှာ ကြိုဆိုပါတယ်။
+        <br>
+        ဒီနေရာလေးက ကိုယ်ပိုင်အတွေးတွေ၊
+        အမှတ်တရတွေနဲ့ စိတ်ဝင်စားရာတွေကို
+        မျှဝေဖို့ ဖန်တီးထားတာပါ။
+    </p>
+</section>
+
+<section class="card" id="about">
+    <h2 class="section-title">👤 About SAW</h2>
+
+    <p>
+        ဒီနေရာမှာ SAW အကြောင်းကို
+        ကိုယ်တိုင်ရေးသားပြီး ထည့်သွင်းနိုင်ပါတယ်။
+    </p>
+
+    <p>
+        <b>“ကိုယ်ပိုင်နေရာလေးတစ်ခု၊ ကိုယ်ပိုင်အတွေးလေးတွေကို မျှဝေဖို့...”</b>
+    </p>
+</section>
+
+<section class="card" id="thoughts">
+    <h2 class="section-title">✍️ Thoughts</h2>
+
+    <div class="post">
+        <b>My first post</b>
         <p>
-            SAW's Actions မှာ ကြိုဆိုပါတယ်။
-            <br>
-            ဒီနေရာလေးက ကိုယ်ပိုင်အတွေးတွေ၊
-            ဓာတ်ပုံတွေနဲ့ အမှတ်တရတွေကို မျှဝေဖို့ပါ။
+            SAW's Actions ကို ဒီနေ့ကစပြီး
+            တဖြည်းဖြည်း တည်ဆောက်သွားမယ်။
         </p>
-    </section>
+    </div>
 
-    <a class="card" href="#">
-        <strong>👤 About SAW</strong>
-        <span>SAW အကြောင်း သိချင်ရင် ဒီမှာကြည့်ပါ။</span>
-    </a>
+    <div class="post">
+        <b>Coming soon...</b>
+        <p>
+            ကိုယ်ပိုင်အတွေးများ၊ စာများနဲ့
+            အမှတ်တရတွေကို ဒီနေရာမှာ ထည့်သွားမယ်။
+        </p>
+    </div>
+</section>
 
-    <a class="card" href="#">
-        <strong>📸 Photos</strong>
-        <span>ဓာတ်ပုံများနဲ့ အမှတ်တရများ</span>
-    </a>
+<section class="card" id="photos">
+    <h2 class="section-title">📸 Photos</h2>
 
-    <a class="card" href="#">
-        <strong>✍️ Thoughts</strong>
-        <span>အတွေးများ၊ စာများနဲ့ ကိုယ်ပိုင်အမြင်များ</span>
-    </a>
+    <p>
+        ဓာတ်ပုံများကို ဒီနေရာမှာ နောက်ပိုင်း
+        ထည့်သွင်းသွားနိုင်ပါတယ်။
+    </p>
 
-    <a class="card" href="#">
-        <strong>🔗 Social Media</strong>
-        <span>Facebook၊ Viber၊ Telegram စတဲ့ Social Links များ</span>
-    </a>
+    <p>
+        📷 Photo Gallery — Coming Soon
+    </p>
+</section>
+
+<section class="card social" id="social">
+    <h2 class="section-title">🔗 Social Media</h2>
+
+    <a href="#" target="_blank">📘 Facebook</a>
+    <a href="#" target="_blank">💬 Viber</a>
+    <a href="#" target="_blank">✈️ Telegram</a>
+</section>
 
 </main>
 
-<footer class="footer">
+<footer>
     © 2026 SAW's Actions
+    <br>
+    Made with ❤️
 </footer>
 
 </body>
